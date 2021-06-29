@@ -42,7 +42,6 @@ app.get('/temperatura/fahrenheitparacelsius/:valor', (req, res) => {
     res.json({ "celsius": celsius });
 });
 
-
 app.get('/temperatura/celsiusparafahrenheit/:valor', (req, res) => {
 
     let valor = req.params.valor;
@@ -92,6 +91,6 @@ app.get('/temperatura/fahrenheitparakelvin/:valor', (req, res) => {
     res.json({ "kelvin": kelvin });
 });
 
-app.listen(8080, () => {
-    console.log("Servidor rodando na porta 8080");
+app.listen(8060, () => {
+    console.log("Servidor rodando na porta 8060");
 });
