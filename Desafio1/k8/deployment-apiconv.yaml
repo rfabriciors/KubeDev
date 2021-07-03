@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: apiconv
+  name: apiconv
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: apiconv
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: apiconv
+    spec:
+      containers:
+      - image: rfabricio/apiconv:latest
+        name: apiconv
+        ports:
+        - containerPort: 8080
+        resources: {}
+status: {}
