@@ -32,4 +32,4 @@ jobs:
           push: true
           tags: |
             rfabricio/rotten-potatoes:latest
-            rfabricio/rotten-potatoes:${{ gitghub.run_number }}
+            rfabricio/rotten-potatoes:${{ github.run_number }}
